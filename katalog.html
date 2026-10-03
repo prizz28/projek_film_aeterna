@@ -35,7 +35,65 @@
         </nav>
     </header>
 
-     <footer class="footer">
+    <main>
+        
+        <section class="catalog-section">
+
+            <h1>FILM</h1>
+
+            <p class="catalog-description">
+                Temukan film yang ingin kamu tonton.
+            </p>
+
+            <div class="catalog-controls">
+
+                <label for="searchFilm" class="sr-only">
+                    Cari film
+                </label>
+
+                <input
+                    type="text"
+                    id="searchFilm"
+                    placeholder="Cari film..."
+                >
+
+
+                <label for="genreFilter" class="sr-only">
+                    Pilih genre
+                </label>
+
+                <select id="genreFilter">
+                    <option value="all">Semua Genre</option>
+                    <option value="Animation">Animation</option>
+                    <option value="Adventure">Adventure</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Action">Action</option>
+                    <option value="Fantasy">Fantasy</option>
+                    <option value="Sci-Fi">Sci-Fi</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Family">Family</option>
+                </select>
+
+
+                <label for="ratingSort" class="sr-only">
+                    Urutkan rating
+                </label>
+
+                <select id="ratingSort">
+                    <option value="default">Rating</option>
+                    <option value="high">Rating Tertinggi</option>
+                    <option value="low">Rating Terendah</option>
+                </select>
+
+            </div>
+
+            <div class="film-grid" id="catalogFilms"></div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
 
         <div>
             <h3>AETERNA</h3>
