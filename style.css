@@ -152,6 +152,22 @@ body {
     border: 1px solid #292929;
 }
 
+/* POPULAR FILM */
+
+.film-section {
+    padding: 70px 80px;
+}
+
+.section-header {
+    margin-bottom: 25px;
+}
+
+.section-header h2 {
+    font-size: 24px;
+}
+
+/* Footer */
+
 .footer {
     min-height: 180px;
 
