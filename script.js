@@ -87,7 +87,39 @@ const films = [
     }
 ];
 
-function tampilkanFilm() {
+// MENAMPILKAN FILM
+
+function buatCardFilm(film) {
+
+    const card = document.createElement("article");
+
+    card.classList.add("film-card");
+
+    card.innerHTML = `
+        <img
+            src="${film.image}"
+            alt="Poster ${film.title}"
+        >
+
+        <div class="film-info">
+
+            <h3 class="film-title">
+                ${film.title}
+            </h3>
+
+            <p class="film-rating">
+                ★ ${film.rating}
+            </p>
+
+        </div>
+    `;
+
+    return card;
+}
+
+// HOME - POPULAR FILMS
+
+function tampilkanPopular() {
 
     const popularFilms = document.getElementById("popularFilms");
 
@@ -99,31 +131,134 @@ function tampilkanFilm() {
 
     films.slice(0, 4).forEach(function(film) {
 
-        const card = document.createElement("article");
-
-        card.classList.add("film-card");
-
-        card.innerHTML = `
-            <img
-                src="${film.image}"
-                alt="Poster ${film.title}"
-            >
-
-            <div class="film-info">
-
-                <h3 class="film-title">
-                    ${film.title}
-                </h3>
-
-                <p class="film-rating">
-                    ★ ${film.rating}
-                </p>
-
-            </div>
-        `;
+        const card = buatCardFilm(film);
 
         popularFilms.appendChild(card);
+
     });
 }
 
-tampilkanFilm();
+// KATALOG FILM
+
+function tampilkanKatalog(dataFilm) {
+
+    const catalogFilms = document.getElementById("catalogFilms");
+
+    if (!catalogFilms) {
+        return;
+    }
+
+    catalogFilms.innerHTML = "";
+
+    dataFilm.forEach(function(film) {
+
+        const card = buatCardFilm(film);
+
+        catalogFilms.appendChild(card);
+
+    });
+}
+
+// SEARCH FILM
+
+function cariFilm() {
+
+    const searchInput = document.getElementById("searchFilm");
+
+    if (!searchInput) {
+        return;
+    }
+
+    searchInput.addEventListener("input", function() {
+
+        const keyword = searchInput.value.toLowerCase();
+
+        const hasilPencarian = films.filter(function(film) {
+
+            return film.title.toLowerCase().includes(keyword);
+
+        });
+
+        tampilkanKatalog(hasilPencarian);
+
+    });
+}
+
+
+// FILTER GENRE
+
+function filterGenre() {
+
+    const genreFilter = document.getElementById("genreFilter");
+
+    if (!genreFilter) {
+        return;
+    }
+
+    genreFilter.addEventListener("change", function() {
+
+        const genre = genreFilter.value;
+
+        if (genre === "all") {
+
+            tampilkanKatalog(films);
+
+            return;
+        }
+
+        const hasilFilter = films.filter(function(film) {
+
+            return film.genre.includes(genre);
+
+        });
+
+        tampilkanKatalog(hasilFilter);
+
+    });
+}
+
+
+// SORT RATING
+
+function sortRating() {
+
+    const ratingSort = document.getElementById("ratingSort");
+
+    if (!ratingSort) {
+        return;
+    }
+
+    ratingSort.addEventListener("change", function() {
+
+        const dataFilm = [...films];
+
+        if (ratingSort.value === "high") {
+
+            dataFilm.sort(function(a, b) {
+                return b.rating - a.rating;
+            });
+
+        }
+
+        if (ratingSort.value === "low") {
+
+            dataFilm.sort(function(a, b) {
+                return a.rating - b.rating;
+            });
+
+        }
+
+        tampilkanKatalog(dataFilm);
+
+    });
+}
+
+tampilkanPopular();
+
+tampilkanKatalog(films);
+
+cariFilm();
+
+filterGenre();
+
+sortRating();
