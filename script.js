@@ -6,7 +6,7 @@ const films = [
         year: 2008,
         genre: "Animation, Sci-Fi",
         rating: 8.4,
-        image: "https://upload.wikimedia.org/wikipedia/en/c/c2/WALL-Eposter.jpg",
+        image: "https://upload.wikimedia.org/wikipedia/id/4/4c/WALL-E_poster.jpg?utm_source=id.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
     },
     {
         title: "Up",
