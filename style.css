@@ -151,3 +151,47 @@ body {
 
     border: 1px solid #292929;
 }
+
+.footer {
+    min-height: 180px;
+
+    padding: 40px 80px;
+
+    background-color: #0F0F0F;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.footer h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    color: #A3A3A3;
+    font-size: 14px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.footer-links a {
+    color: #A3A3A3;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #FF6B2C;
+}
+
+.copyright {
+    grid-column: 1 / -1;
+    color: #666666 !important;
+    font-size: 12px !important;
+}
