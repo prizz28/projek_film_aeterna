@@ -39,55 +39,63 @@ const films = [
         genre: "Animation, Comedy",
         rating: 8.1,
         image: "https://upload.wikimedia.org/wikipedia/en/5/50/RatatouillePoster.jpg",
+        detail: "detail5.html"
     },
     {
         title: "The Incredibles",
         year: 2004,
         genre: "Animation, Action",
         rating: 8.0,
-        image: "https://upload.wikimedia.org/wikipedia/en/e/ec/The_Incredibles.jpg",
+        image: "https://cdn.posteritati.com/posters/000/000/058/702/the-incredibles-md-web.jpg",
+        detail: "detail6.html"
     },
     {
         title: "Inside Out",
         year: 2015,
         genre: "Animation, Adventure",
         rating: 8.1,
-        image: "https://upload.wikimedia.org/wikipedia/en/0/05/Inside_Out_%282015_film%29.png",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk8bQ1e-5mLiaXWf3-t_SKb_OpTw4SLvTUwqrqdCtYddYRuh-oWS0d-z99&s=10",
+        detail: "detail7.html"
     },
     {
         title: "Coco",
         year: 2017,
         genre: "Animation, Fantasy",
         rating: 8.4,
-        image: "https://upload.wikimedia.org/wikipedia/en/9/9d/Coco_%282017_film%29.png",
+        image: "https://upload.wikimedia.org/wikipedia/id/9/98/Coco_%282017_film%29_poster.jpg?utm_source=id.wikipedia.org&utm_campaign=index&utm_content=original",
+        detail: "detail8.html"
     },
     {
         title: "Moana",
         year: 2016,
         genre: "Animation, Adventure",
         rating: 7.6,
-        image: "https://upload.wikimedia.org/wikipedia/en/2/2e/Moana_poster.jpg",
+        image: "https://upload.wikimedia.org/wikipedia/id/2/26/Moana_Teaser_Poster.jpg?utm_source=id.wikipedia.org&utm_campaign=index&utm_content=original",
+        detail: "detail9.html"
     },
     {
         title: "How to Train Your Dragon",
         year: 2010,
         genre: "Animation, Fantasy",
         rating: 8.1,
-        image: "https://upload.wikimedia.org/wikipedia/en/9/9d/How_to_Train_Your_Dragon_Poster.jpg",
+        image: "https://upload.wikimedia.org/wikipedia/id/9/99/How_to_Train_Your_Dragon_Poster.jpg?utm_source=id.wikipedia.org&utm_campaign=index&utm_content=original",
+        detail: "detail10.html"
     },
     {
         title: "Wonder",
         year: 2017,
         genre: "Drama, Family",
         rating: 7.9,
-        image: "https://upload.wikimedia.org/wikipedia/en/9/9e/Wonder_2017_film_poster.jpg",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMbyqmry7JdkfFNHsysYjcWSHKGC77fqgql3-sF9OzHOVa_MmbZsJIiZlU&s=10",
+        detail: "detail11.html"
     },
     {
         title: "The Wild Robot",
         year: 2024,
         genre: "Animation, Adventure",
         rating: 8.2,
-        image: "https://upload.wikimedia.org/wikipedia/en/1/1e/The_Wild_Robot_poster.jpg",
+        image: "https://m.media-amazon.com/images/M/MV5BZWNiZjVlZTUtNGUwYi00MjJmLTg2MDctNWEzYTJiMzY1ODc4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        detail: "detail12.html"
     }
 ];
 
