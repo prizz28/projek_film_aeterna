@@ -684,3 +684,377 @@ body {
 
     margin-bottom: 20px;
 }
+
+/* Tablet */
+
+@media (max-width: 1024px) {
+
+    .navbar {
+        padding: 0 40px;
+    }
+
+    .nav-menu {
+        gap: 22px;
+    }
+
+    .nav-actions input {
+        width: 140px;
+    }
+
+    .hero {
+        min-height: 560px;
+        padding: 60px 40px;
+    }
+
+    .hero-content {
+        max-width: 500px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .film-section {
+        padding: 55px 40px;
+    }
+
+    .film-grid,
+    #catalogFilms,
+    #watchlistFilms {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 22px;
+    }
+
+    .film-card img,
+    #catalogFilms .film-card img {
+        height: 330px;
+    }
+
+    .footer {
+        padding: 40px;
+    }
+
+    /* KATALOG */
+
+    .catalog-section {
+        padding: 45px 40px 60px;
+    }
+
+    .catalog-controls {
+        flex-wrap: wrap;
+    }
+
+    .catalog-controls input {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    /* DETAIL */
+
+    .detail-section {
+        padding: 40px;
+    }
+
+    .detail-content {
+        grid-template-columns: 280px 1fr;
+        gap: 40px;
+    }
+
+    .detail-poster img {
+        width: 280px;
+        height: 400px;
+    }
+
+    .trailer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .trailer-container {
+        width: 100%;
+    }
+
+    .synopsis {
+        width: 100%;
+    }
+
+    /* WATCHLIST */
+
+    .watchlist-section {
+        padding: 45px 40px 60px;
+    }
+}
+
+
+/* HP */
+
+@media (max-width: 480px) {
+
+    /* NAVBAR */
+
+    .navbar {
+        height: auto;
+        min-height: 72px;
+        padding: 15px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .nav-actions {
+        margin-left: auto;
+    }
+
+    .nav-actions input {
+        width: 115px;
+        height: 34px;
+        font-size: 13px;
+    }
+
+    .nav-menu {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .nav-menu a {
+        font-size: 14px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        min-height: 520px;
+        padding: 45px 15px;
+        background-position: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero-info {
+        gap: 12px;
+        font-size: 13px;
+    }
+
+    .hero p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .hero-buttons {
+        flex-wrap: wrap;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        min-height: 42px;
+        height: auto;
+        padding: 11px 16px;
+    }
+
+
+    /* FILM */
+
+    .film-section {
+        padding: 40px 15px;
+    }
+
+    .section-header h2 {
+        font-size: 21px;
+    }
+
+    .film-grid,
+    #catalogFilms,
+    #watchlistFilms {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .film-card img,
+    #catalogFilms .film-card img {
+        height: 235px;
+    }
+
+    .film-info {
+        padding: 10px;
+    }
+
+    .film-title {
+        font-size: 13px;
+    }
+
+    .film-rating {
+        font-size: 12px;
+    }
+
+    .catalog-section {
+        padding: 35px 15px 45px;
+        min-height: 700px;
+    }
+
+    .catalog-section h1 {
+        font-size: 28px;
+    }
+
+    .catalog-description {
+        font-size: 14px;
+    }
+
+    .catalog-controls {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-bottom: 30px;
+    }
+
+    .catalog-controls input,
+    #genreFilter,
+    #ratingSort {
+        width: 100%;
+        max-width: none;
+    }
+
+    .detail-section {
+        padding: 25px 15px 45px;
+        min-height: auto;
+    }
+
+    .back-link {
+        margin-bottom: 25px;
+    }
+
+    .detail-content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .detail-poster img {
+        width: 190px;
+        height: 270px;
+        margin: 0 auto;
+    }
+
+    .detail-info {
+        padding-top: 0;
+    }
+
+    .detail-info h1 {
+        font-size: 27px;
+    }
+
+    .detail-meta {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .detail-description {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .detail-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .detail-buttons .btn-primary,
+    .detail-buttons .btn-secondary {
+        width: 100%;
+    }
+
+
+    /* TRAILER */
+
+    .trailer-section {
+        margin-top: 55px;
+    }
+
+    .trailer-section h2 {
+        font-size: 21px;
+    }
+
+    .trailer-content {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .trailer-container {
+        width: 100%;
+        min-height: 0;
+        aspect-ratio: 16 / 9;
+    }
+
+    .trailer-container iframe {
+        min-height: 0;
+        height: 100%;
+    }
+
+    .synopsis {
+        padding: 20px;
+    }
+
+    .synopsis h3 {
+        font-size: 17px;
+    }
+
+    .synopsis p {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+
+    /* WATCHLIST */
+
+    .watchlist-section {
+        padding: 40px 15px 55px;
+        min-height: 650px;
+    }
+
+    .watchlist-section h1 {
+        font-size: 28px;
+    }
+
+    .watchlist-description {
+        font-size: 14px;
+    }
+
+    .remove-watchlist {
+        height: 36px;
+        font-size: 12px;
+    }
+
+    .empty-watchlist {
+        padding: 45px 20px;
+    }
+
+
+    /* FOOTER */
+
+    .footer {
+        padding: 30px 15px;
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .footer-links {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .copyright {
+        grid-column: auto;
+    }
+}
