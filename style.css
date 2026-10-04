@@ -520,16 +520,22 @@ body {
 
 .trailer-section {
     margin-top: 90px;
-
-    max-width: 1000px;
 }
 
 .trailer-section h2 {
     font-size: 24px;
-
     margin-bottom: 25px;
 }
 
+.trailer-content {
+    display: grid;
+
+    grid-template-columns: 900px 1fr;
+
+    gap: 30px;
+
+    align-items: start;
+}
 
 .trailer-container {
     width: 900px;
@@ -544,12 +550,37 @@ body {
     overflow: hidden;
 }
 
-
 .trailer-container iframe {
     width: 100%;
     height: 100%;
 
     border: none;
+}
+
+.synopsis {
+    min-height: 500px;
+
+    padding: 25px;
+
+    background-color: #181818;
+
+    border: 1px solid #292929;
+
+    border-radius: 10px;
+}
+
+.synopsis h3 {
+    font-size: 18px;
+
+    margin-bottom: 20px;
+}
+
+.synopsis p {
+    color: #A3A3A3;
+
+    font-size: 14px;
+
+    line-height: 1.8;
 }
 
 .film-link {
