@@ -7,6 +7,7 @@ const films = [
         genre: "Animation, Sci-Fi",
         rating: 8.4,
         image: "https://upload.wikimedia.org/wikipedia/id/4/4c/WALL-E_poster.jpg?utm_source=id.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+        detail: "detail1.html"
     },
     {
         title: "Up",
@@ -90,28 +91,26 @@ const films = [
 // MENAMPILKAN FILM
 
 function buatCardFilm(film) {
-
     const card = document.createElement("article");
-
     card.classList.add("film-card");
 
     card.innerHTML = `
-        <img
-            src="${film.image}"
-            alt="Poster ${film.title}"
-        >
+        <a href="${film.detail}" class="film-link">
+            <img
+                src="${film.image}"
+                alt="Poster ${film.title}"
+            >
 
-        <div class="film-info">
+            <div class="film-info">
+                <h3 class="film-title">
+                    ${film.title}
+                </h3>
 
-            <h3 class="film-title">
-                ${film.title}
-            </h3>
-
-            <p class="film-rating">
-                ★ ${film.rating}
-            </p>
-
-        </div>
+                <p class="film-rating">
+                    ★ ${film.rating}
+                </p>
+            </div>
+        </a>
     `;
 
     return card;
