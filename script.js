@@ -15,6 +15,7 @@ const films = [
         genre: "Animation, Adventure",
         rating: 8.3,
         image: "https://upload.wikimedia.org/wikipedia/en/0/05/Up_%282009_film%29.jpg",
+        detail: "detail2.html"
     },
     {
         title: "Finding Nemo",
@@ -22,6 +23,7 @@ const films = [
         genre: "Animation, Adventure",
         rating: 8.2,
         image: "https://upload.wikimedia.org/wikipedia/en/2/29/Finding_Nemo.jpg",
+        detail: "detail3.html"
     },
     {
         title: "Toy Story",
@@ -29,6 +31,7 @@ const films = [
         genre: "Animation, Comedy",
         rating: 8.3,
         image: "https://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg",
+        detail: "detail4.html"
     },
     {
         title: "Ratatouille",
